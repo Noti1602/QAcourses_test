@@ -4,4 +4,5 @@ npm install
 npm run webdriver &
 # Wait for port 4444 to be listening connections
 chmod +x wait-for-it.sh && ./wait-for-it.sh -t 60 127.0.0.1:4444 -- echo "driver is up"
+curl http://localhost:4444/selenium-server/driver/?cmd=shutDownSeleniumServer
 npm run test
